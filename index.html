@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker with Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calendar">
+            <h1>Habit Tracker</h1>
+            <div class="calendar-header">
+                <button onclick="prevMonth()">◄</button>
+                <span id="monthYear"></span>
+                <button onclick="nextMonth()">►</button>
+                <div>
+                    <button onclick="changeYear(-1)">◄</button>
+                    <span id="year">2025</span>
+                    <button onclick="changeYear(1)">►</button>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+        </div>
+        <div class="habit-section">
+            <h2>Thói Quen</h2>
+            <div class="habit-input">
+                <input type="text" id="habitInput" placeholder="Nhập thói quen...">
+                <button onclick="addHabit()">Thêm</button>
+            </div>
+            <div class="habit-list">
+                <table>
+                    <thead id="habitTableHead"></thead>
+                    <tbody id="habitTableBody"></tbody>
+                </table>
+            </div>
+            <div class="visualization">
+                <h2>Trực Quan Hóa</h2>
+                <canvas id="habitChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html> 
