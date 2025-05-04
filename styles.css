@@ -1,30 +1,30 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font chữ hiện đại */
-    margin: 30px; /* Tăng margin xung quanh body */
-    background-color: #f7f7f7; /* Màu nền sáng hơn */
-    color: #333; /* Màu chữ mặc định */
-    line-height: 1.6; /* Tăng khoảng cách dòng */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
     max-width: 1200px;
-    margin: 30px auto; /* Căn giữa container và tăng margin */
+    margin: 30px auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 30px; /* Tăng khoảng cách giữa các phần */
+    gap: 30px;
 }
 
 h1, h2 {
     text-align: center;
-    color: #2c3e50; /* Màu tiêu đề đậm hơn */
-    margin-bottom: 25px; /* Tăng khoảng cách dưới tiêu đề */
+    color: #2c3e50;
+    margin-bottom: 25px;
 }
 
 .calendar {
-    background: #fff; /* Nền trắng */
-    padding: 25px; /* Tăng padding */
-    border-radius: 12px; /* Góc bo tròn hơn */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ nhàng hơn */
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .calendar-header {
@@ -35,47 +35,47 @@ h1, h2 {
 }
 
 .calendar-header button {
-    padding: 10px 15px; /* Tăng padding nút */
-    background: #3498db; /* Màu xanh dương tươi sáng */
+    padding: 10px 15px;
+    background: #3498db;
     color: white;
     border: none;
-    border-radius: 6px; /* Góc bo tròn hơn */
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+    transition: background-color 0.3s ease;
 }
 
 .calendar-header button:hover {
-    background-color: #2980b9; /* Màu xanh dương đậm hơn khi hover */
+    background-color: #2980b9;
 }
 
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 8px; /* Tăng khoảng cách giữa các ô ngày */
+    gap: 8px;
     text-align: center;
 }
 
 .calendar-grid div {
-    padding: 12px; /* Tăng padding ô ngày */
+    padding: 12px;
     border-radius: 6px;
 }
 
 .calendar-grid .day-name {
     font-weight: bold;
-    color: #777; /* Màu chữ nhạt hơn cho tên thứ */
+    color: #777;
 }
 
 .calendar-grid .day {
     cursor: pointer;
-    transition: background-color 0.2s ease; /* Hiệu ứng hover nhẹ */
+    transition: background-color 0.2s ease;
 }
 
 .calendar-grid .day:hover {
-    background-color: #ecf0f1; /* Màu nền nhạt khi hover */
+    background-color: #ecf0f1;
 }
 
 .calendar-grid .selected-day {
-    background: #3498db; /* Màu nền cho ngày được chọn */
+    background: #3498db;
     color: white;
     font-weight: bold;
 }
@@ -89,59 +89,59 @@ h1, h2 {
 
 .habit-input {
     display: flex;
-    gap: 15px; /* Tăng khoảng cách giữa input và button */
+    gap: 15px;
     margin-bottom: 25px;
 }
 
 .habit-input input {
     flex: 1;
-    padding: 12px; /* Tăng padding input */
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 6px;
-    font-size: 16px; /* Tăng kích thước chữ input */
+    font-size: 16px;
 }
 
 .habit-input button {
-    padding: 12px 20px; /* Tăng padding button */
-    background: #27ae60; /* Màu xanh lá cây tươi sáng */
+    padding: 12px 20px;
+    background: #27ae60;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 16px; /* Tăng kích thước chữ button */
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 .habit-input button:hover {
-    background-color: #218c52; /* Màu xanh lá cây đậm hơn khi hover */
+    background-color: #218c52;
 }
 
 .habit-list table {
     width: 100%;
     border-collapse: collapse;
     border-radius: 8px;
-    overflow: hidden; /* Để border-radius hoạt động trên table */
+    overflow: hidden;
 }
 
 .habit-list th,
 .habit-list td {
-    padding: 15px; /* Tăng padding ô bảng */
+    padding: 15px;
     text-align: center;
-    border-bottom: 1px solid #eee; /* Đường kẻ dưới các ô */
+    border-bottom: 1px solid #eee;
 }
 
 .habit-list th {
-    background-color: #f2f2f2; /* Màu nền cho header bảng */
+    background-color: #f2f2f2;
     font-weight: bold;
     color: #555;
 }
 
 .habit-list tr:last-child td {
-    border-bottom: none; /* Loại bỏ đường kẻ dưới ở hàng cuối cùng */
+    border-bottom: none;
 }
 
 .habit-list select {
-    padding: 10px; /* Tăng padding select */
+    padding: 10px;
     border-radius: 6px;
     border: 1px solid #ccc;
     font-size: 16px;
@@ -149,10 +149,10 @@ h1, h2 {
 }
 
 .habit-list .delete-btn {
-    background: #e74c3c; /* Màu đỏ tươi sáng */
+    background: #e74c3c;
     color: white;
     border: none;
-    padding: 10px 15px; /* Tăng padding nút xóa */
+    padding: 10px 15px;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -160,7 +160,7 @@ h1, h2 {
 }
 
 .habit-list .delete-btn:hover {
-    background-color: #c0392b; /* Màu đỏ đậm hơn khi hover */
+    background-color: #c0392b;
 }
 
 .visualization {
@@ -180,26 +180,24 @@ canvas {
 }
 
 
- /* Style cho các icon nhỏ xinh */
- .habit-status-icon {
-    font-size: 1.2em; /* Giảm kích thước icon */
+.habit-status-icon {
+    font-size: 1.2em;
     cursor: pointer;
     user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px; /* Kích thước cố định cho ô icon */
+    width: 24px;
     height: 24px;
-    line-height: 24px; /* Căn giữa icon theo chiều dọc */
-    border-radius: 50%; /* Tạo hình tròn nhẹ */
-    /* Thêm chút khoảng trắng xung quanh icon */
-    margin: 0 auto; /* Căn giữa icon trong ô td */
+    line-height: 24px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
-.habit-status-unknown { color: #777; background-color: #f0f0f0; } /* Màu xám nhạt */
-.habit-status-done { color: #27ae60; background-color: #d4edda; } /* Xanh lá cây nhạt */
-.habit-status-not-done { color: #e74c3c; background-color: #f8d7da; } /* Đỏ nhạt */
+.habit-status-unknown { color: #777; background-color: #f0f0f0; }
+.habit-status-done { color: #27ae60; background-color: #d4edda; }
+.habit-status-not-done { color: #e74c3c; background-color: #f8d7da; }
 .habit-list td {
-    padding: 5px; /* Giảm padding của ô */
+    padding: 5px;
     text-align: center;
 }
 .habit-list select {
@@ -210,18 +208,24 @@ canvas {
     background-color: transparent;
     padding: 0;
     margin: 0;
-    width: 24px; /* Kích thước bằng với ô icon */
+    width: 24px;
     height: 24px;
     cursor: pointer;
-    font-size: 1.2em; /* Kích thước icon trong select */
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%; /* Bo tròn select khi mở */
-    text-align: center; /* Căn giữa icon trong select */
+    border-radius: 50%;
+    text-align: center;
 }
 .habit-list option {
     font-size: 1em;
-    text-align: center; /* Căn giữa icon trong dropdown option */
+    text-align: center;
     padding: 5px;
+}
+.calendar-logo {
+    display: block; 
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 15px auto; 
 }
